@@ -4,8 +4,6 @@ declare class Gallery extends React.Component<Props> {}
 
 declare type ImageOptions = {
   src:               string;
-  height:            number;
-  width:             number;
   thumbnail:         string;
   thumbnailWidth:    number;
   thumbnailHeight:   number;
@@ -21,6 +19,8 @@ declare type ImageOptions = {
 declare type Props = {
   images:                ImageOptions[];
   id?:                   string;
+  height:                number;
+  width:                 number;
   enableImageSelection?: boolean;
   onSelectImage?:        () => void;
   rowHeight?:            number;
